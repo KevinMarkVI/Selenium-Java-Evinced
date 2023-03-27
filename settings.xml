@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <username>kevin_berg</username>
+            <password>fJelxqWmqwwuLpj6zfXN</password>
+            <id>central</id>
+        </server>
+        <server>
+            <username>kevin_berg</username>
+            <password>fJelxqWmqwwuLpj6zfXN</password>
+            <id>snapshots</id>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>private-maven</name>
+                    <url>https://evinced.jfrog.io/artifactory/private-maven</url>
+                </repository>
+                <repository>
+                    <snapshots />
+                    <id>snapshots</id>
+                    <name>private-maven</name>
+                    <url>https://evinced.jfrog.io/artifactory/private-maven</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>private-maven</name>
+                    <url>https://evinced.jfrog.io/artifactory/private-maven</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <snapshots />
+                    <id>snapshots</id>
+                    <name>private-maven</name>
+                    <url>https://evinced.jfrog.io/artifactory/private-maven</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <id>artifactory</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
+</settings>
